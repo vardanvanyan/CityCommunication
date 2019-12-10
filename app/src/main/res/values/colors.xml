@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="log_sign_in_color">#FFF</color>
+    <color name="back_tint_color">#FFF</color>
+    <color name="create_account_text_color">#928C8C</color>
+    <color name="sign_up_color">#FFF</color>
+    <color name="sign_up_btn__color">#928C8C</color>
+    <color name="back_color">#A09E9E</color>
+    <color name="name_text_color">#95FF0000</color>
+</resources>

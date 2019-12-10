@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_fr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/oval"
+    tools:context=".Fragments.LoginFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/log_sign_in_top"
+        android:text="@string/sign_in"
+        android:textColor="@color/log_sign_in_color"
+        android:textSize="@dimen/log_sign_in_size" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ed_text_lay_mail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/log_margin_top"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+
+            android:id="@+id/email"
+            android:layout_width="@dimen/log_sign_in_width"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="@string/log_email"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ed_text_lay_pass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_text_lay_mail"
+        android:layout_centerHorizontal="true"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/pass"
+            android:layout_width="@dimen/log_sign_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed_text_lay_mail"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/log_password"
+            android:inputType="textPassword" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/log_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_text_lay_pass"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_corner"
+        android:backgroundTint="@color/back_tint_color"
+        android:text="@string/sign_in"
+        android:textColor="#928C8C" />
+
+    <Button
+        android:id="@+id/reg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTintMode="screen"
+        android:text="@string/create_new_account"
+        android:textColor="@color/create_account_text_color" />
+
+
+</RelativeLayout>
